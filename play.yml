@@ -4,7 +4,7 @@
   gather_facts: no
   tasks:
     - name: Execute docker ps on specified Docker Host
-      command: docker --host "{{ docker_host }}" ps
+      command: ps
       register: docker_ps_output
 
     - name: Print output of docker ps
